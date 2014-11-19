@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :students
   resources :companies
+  resources :sponsors
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

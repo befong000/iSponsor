@@ -5,6 +5,15 @@
     
     <%= javascript_include_tag "masonry.pkgd.min" %>
     <%= javascript_include_tag "modernizr.custom" %>
+   <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.1
+      } );
+    </script>
+
+
 <%end%>
 
 <% content_for :css do %>

@@ -1,3 +1,12 @@
+<% content_for :js do %>
+    <%= javascript_include_tag "AnimOnScroll" %>
+    <%= javascript_include_tag "classie" %>
+    
+    <%= javascript_include_tag "masonry.pkgd.min" %>
+    <%= javascript_include_tag "modernizr.custom" %>
+    <%= javascript_include_tag "imagesloaded" %>
+
+<%end%>
 
 <% content_for :css do %>
 <%= stylesheet_link_tag "component.css" %>

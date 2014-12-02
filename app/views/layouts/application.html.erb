@@ -6,34 +6,11 @@
   <%= csrf_meta_tags %>
   <%= yield :head %>
   <%= yield :css %>
-  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-    
-
 </head>
 <body>
  <%= render 'layouts/header' %>
  <%= notice_message  %>
-<% content_for :js do %>
-    <%= javascript_include_tag "AnimOnScroll" %>
-    <%= javascript_include_tag "classie" %>
-    
-    <%= javascript_include_tag "masonry.pkgd.min" %>
-    <%= javascript_include_tag "modernizr.custom" %>
-<%end%>
-<%= yield %>
-<% content_for :js do %>
-    <%= javascript_include_tag "imagesloaded" %>
-    <script>
-      new AnimOnScroll( document.getElementById( 'grid' ), {
-        minDuration : 0.4,
-        maxDuration : 0.7,
-        viewportFactor : 0.1
-      } );
-    </script>
-    <%end%>
+ <%= yield %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= yield :js %>

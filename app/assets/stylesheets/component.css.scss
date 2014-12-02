@@ -1,0 +1,167 @@
+.grid {
+	max-width: 69em;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 15px;
+	width: 33%;
+	opacity: 0;
+	max-width: 100%;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+
+
+.grid .ttt {
+background: white;
+word-wrap:break-word;
+margin: 10px auto;
+}
+
+
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.hero-unit li {
+  line-height: 30px;
+}
+
+.blk {
+background: white;
+border-radius:10px;
+outline: none;
+border-color:black;
+border-style:solid;
+border-width:thin;
+}
+
+.blk p {
+padding: 20px;
+}
+.blk h2 {
+padding: 10px;
+}
+
+
+
+
+
+.neighborhood-guides{
+    background-color:white;
+    border-bottom:1px solid #dbdbdb;
+}
+.neighborhood-guides h2 {
+    color:#393c3d;   
+    font-size:24px;
+}
+.neighborhood-guides p{
+    font-size:15px;
+    margin-bottom:13px;
+}
+
+.nav a {
+  color: #19a9e5;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+    
+  background-image:url('http://i.imgur.com/Q4oHfMU.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+
+     color:#393c3d;  
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: white;  
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}

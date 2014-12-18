@@ -14,3 +14,6 @@ student-enterprise-platform
 打以下指令跑起 local web server
 
     $ rails s
+
+## Deploy
+git push heroku master

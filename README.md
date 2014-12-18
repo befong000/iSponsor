@@ -16,4 +16,8 @@ student-enterprise-platform
     $ rails s
 
 ## Deploy
-git push heroku master
+
+Please login heroku fist, 
+
+    $ git remote add heroku git@heroku.com:isponsor.git
+    $ git push heroku master

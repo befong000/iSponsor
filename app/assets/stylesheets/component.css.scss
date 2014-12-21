@@ -112,3 +112,47 @@
 .learn-more a {
     color: #00b0ff;
 }
+
+#column{
+    position: ralative;
+    border-radius:10px;
+    outline: none;
+    border-color:black;
+    border-style:solid;
+    border-width:thin;
+    padding-bottom: 65%;
+}
+
+#column .sponsor_detail {
+    float:left;
+    margin: 10px auto;
+    padding-bottom: 60px;
+    width:60%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#column .sponsor_apply {
+    float:left;
+    margin: 50px auto;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    width:40%;
+}
+
+#column .sponsor_detail img {
+    max-width:85%;
+    max-height:450px;
+}
+
+#column .sponsor_detail  h2,
+#column .sponsor_detail h3,
+#column .sponsor_detail p,
+#column .sponsor_detail img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feedback{
+    clear:both;
+}

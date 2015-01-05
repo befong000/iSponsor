@@ -70,7 +70,7 @@
         </li>
         <li >
              <div  class="blk">
-                    <h2>Band</h2><img src="//www-techinasia.netdna-ssl.com/wp-content/uploads/2013/02/Line-Band-app-03.png">
+                    <h2>BAND</h2><img src="//http://i.imgur.com/NYFtfd6.png">
                     <p>BAND 是朋友揪團、家人相聚、同好玩樂、同學狂歡時，最專屬的親密社群平台... </p>
                       <p><a class="btn  btn-warning" href="#">贊助內容 &raquo;</a></p>
             </div>
@@ -83,10 +83,17 @@
             </div>
        
 
-     
+     <% @sponsors.each do |sponsor| %>
+      <li >
+             <div  class="blk">
+                    <h2><%= sponsor.name %></h2><img src="//http://i.imgur.com/NYFtfd6.png">
+                    <p><%= sponsor.description %></p>
+                      <p><a class="btn  btn-warning" href="#">贊助內容 &raquo;</a></p>
+            </div>
+        </li>
+         <% end%>
 
-       
-
+       </ul>       
     </div>
     <% content_for :js do %>
     <%= javascript_include_tag "imagesloaded" %>

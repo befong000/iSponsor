@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* line 1, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.grid {
+  max-width: 69em;
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+}
+
+/* line 8, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.grid li {
+  display: block;
+  float: left;
+  padding: 15px;
+  width: 33%;
+  opacity: 0;
+  max-width: 100%;
+}
+
+/* line 19, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+  opacity: 1;
+}
+
+/* line 24, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.grid li a,
+.grid li img {
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* Effect 2: Move Up */
+/* line 32, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.grid.effect-2 li.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  /* line 41, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  /* line 46, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* line 49, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.blk {
+  background: white;
+  border-radius: 10px;
+  outline: none;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+/* line 58, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.blk p {
+  padding: 20px;
+}
+
+/* line 61, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.blk h2 {
+  padding: 10px;
+}
+
+/* line 65, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.nav a {
+  color: #19a9e5;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+/* line 73, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.nav li {
+  display: inline;
+}
+
+/* line 77, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.jumbotron {
+  background-image: url("http://i.imgur.com/Q4oHfMU.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 84, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.jumbotron .container {
+  color: #393c3d;
+  position: relative;
+  top: 100px;
+}
+
+/* line 90, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.jumbotron h1 {
+  color: white;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+/* line 97, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* line 102, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+/* line 106, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 112, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.learn-more a {
+  color: #00b0ff;
+}
+
+/* line 116, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+#column {
+  position: ralative;
+  border-radius: 10px;
+  outline: none;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  padding-bottom: 65%;
+}
+
+/* line 126, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+#column .sponsor_detail {
+  float: left;
+  margin: 10px auto;
+  padding-bottom: 60px;
+  width: 60%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 135, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+#column .sponsor_apply {
+  float: left;
+  margin: 50px auto;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  width: 40%;
+}
+
+/* line 143, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+#column .sponsor_detail img {
+  max-width: 85%;
+  max-height: 450px;
+}
+
+/* line 151, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+#column .sponsor_detail h2,
+#column .sponsor_detail h3,
+#column .sponsor_detail p,
+#column .sponsor_detail img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 156, /home/amo/桌面/isponsor/app/assets/stylesheets/component.css.scss */
+.feedback {
+  clear: both;
+}

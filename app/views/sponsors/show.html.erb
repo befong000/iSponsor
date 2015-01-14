@@ -1,0 +1,40 @@
+<% content_for :css do %>
+<%= stylesheet_link_tag "component.css" %>
+<%end%>
+
+<div class="container">
+    <div id="column">
+        <div class="sponsor_detail">
+            <h2><%= ＠sponsor.name %></h2>
+            <img src="//i.imgur.com/RHFYj16.jpg">
+            <h3><%= @sponsor.description %></h3>
+            <p><br></p>
+            <h3>任務內容</h3>
+            <p><%= ＠sponsor.mission %></p>
+        </div>
+        <div class="sponsor_apply">
+            <h2>任務獎勵</h2>
+            <p><%= ＠sponsor.prize %> </p>
+           
+            <p><a class="btn btn-warning pull-right " href="//www.facebook.com/lovenote0914?fref=photo">申請贊助 &raquo;</a></p>
+        </div>
+    </div>
+    <div class="feedback">
+        <hr>
+        <div id="disqus_thread"></div>
+    </div>
+</div>
+
+<% content_for :js do %>
+<%= javascript_include_tag "imagesloaded"%>
+    <script type="text/javascript">
+        var disqus_shortname = 'isponsor'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<%end%>

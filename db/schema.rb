@@ -11,13 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150104145600) do
+ActiveRecord::Schema.define(version: 20150116150102) do
 
   create_table "sponsors", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.text     "mission"
     t.string   "prize"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: true do |t|
+    t.integer  "phone"
+    t.string   "club"
+    t.integer  "club_number"
+    t.string   "university"
+    t.boolean  "sendemailornot"
+    t.integer  "mailnumber"
+    t.string   "fanpagelink"
+    t.integer  "fanpagenumber"
+    t.boolean  "shareinfoornot"
+    t.date     "finishsponsordate"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

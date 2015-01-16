@@ -31,8 +31,8 @@
             <li >
               <div  class="blk">
                 <h2><%= sponsor.name %></h2>
-                <img src="http://i.imgur.com/NYFtfd6.png">
-                <%= link_to '贊助內容 &raquo;', sponsor_path(sponsor), class: "btn btn-warning"%>
+                <%= image_tag( sponsor.img_URL_outer ) %>
+                <%= link_to '贊助內容  >>', sponsor_path(sponsor), class: "btn btn-warning"%>
               </div>
             </li>
          <% end%>

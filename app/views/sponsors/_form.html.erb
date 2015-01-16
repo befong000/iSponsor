@@ -1,0 +1,65 @@
+聯絡電話phone:integer
+社團名稱club:string
+社團成員數量club_number:integer
+大學名稱university:string
+你可以幫品牌發email給會員嗎？sendemailornot:true or false
+信箱數量mailnumber:integer
+粉絲團連結fanpagelink:string
+粉絲團粉絲數量fanpagenumber:integer
+你可以幫品牌在粉絲團發訊息？shareinfoornot:true or false
+何時可以完成贊助？finishsponsordate:date
+
+
+
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :phone , "聯絡電話"   %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :club , "社團名稱"%><br>
+    <%= f.text_field :club %>
+  </div>
+  <div class="field">
+    <%= f.label :club_number, "社團成員數量" %><br>
+    <%= f.number_field :club_number %>
+  </div>
+  <div class="field">
+    <%= f.label :university, "大學名稱" %><br>
+    <%= f.number_field :university %>
+  </div>
+<div class="field">
+    <%= f.label :mailnumber, "信箱數量" %><br>
+    <%= f.number_field :mailnumber %>
+  </div>
+<div class="field">
+    <%= f.label :fanpagelink, "粉絲團或官網連結" %><br>
+    <%= f.number_field :fanpagelink %>
+  </div>
+
+<div class="field">
+    <%= f.label :fanpagenumber, "粉絲團粉絲數量" %><br>
+    <%= f.number_field :fanpagenumber %>
+  </div>
+  <div class="field">
+    <%= f.label :finishsponsordate, "何時可以完成贊助" %><br>
+    <%= f.number_field :finishsponsordate %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

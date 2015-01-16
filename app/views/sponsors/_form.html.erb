@@ -1,16 +1,5 @@
-聯絡電話phone:integer
-社團名稱club:string
-社團成員數量club_number:integer
-大學名稱university:string
-你可以幫品牌發email給會員嗎？sendemailornot:true or false
-信箱數量mailnumber:integer
-粉絲團連結fanpagelink:string
-粉絲團粉絲數量fanpagenumber:integer
-你可以幫品牌在粉絲團發訊息？shareinfoornot:true or false
-何時可以完成贊助？finishsponsordate:date
 
-
-
+<h1>申請贊助</h1>
 <%= form_for(@task) do |f| %>
   <% if @task.errors.any? %>
     <div id="error_explanation">

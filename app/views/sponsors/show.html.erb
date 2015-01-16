@@ -14,8 +14,10 @@
         </div>
         <div class="sponsor_apply">
             <h2>任務獎勵</h2>
-            <p><%= @sponsor.prize %> </p>
-            <p><a class="btn btn-warning pull-right " href="//www.facebook.com/lovenote0914?fref=photo">申請贊助 &raquo;</a></p>
+            <p><%= @sponsor.reward %> </p>
+            <%= link_to '申請贊助', new_task_path, class: 'btn btn-warning'  %>
+
+
         </div>
     </div>
     <div class="feedback">
@@ -23,7 +25,6 @@
         <div id="disqus_thread"></div>
     </div>
 </div>
-<%= render 'form' %>
 
 <% content_for :js do %>
 <%= javascript_include_tag "imagesloaded"%>

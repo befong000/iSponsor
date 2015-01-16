@@ -1,18 +1,7 @@
 
 <h1>申請贊助</h1>
-<%= form_for(@task) do |f| %>
-  <% if @task.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
-
-      <ul>
-      <% @task.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%= form_for(Task.new) do |f| %>
+  
   <div class="field">
     <%= f.label :phone , "聯絡電話"   %><br>
     <%= f.text_field :phone %>
@@ -27,7 +16,7 @@
   </div>
   <div class="field">
     <%= f.label :university, "大學名稱" %><br>
-    <%= f.number_field :university %>
+    <%= f.text_field :university %>
   </div>
 <div class="field">
     <%= f.label :mailnumber, "信箱數量" %><br>
@@ -35,7 +24,7 @@
   </div>
 <div class="field">
     <%= f.label :fanpagelink, "粉絲團或官網連結" %><br>
-    <%= f.number_field :fanpagelink %>
+    <%= f.text_field :fanpagelink %>
   </div>
 
 <div class="field">
@@ -44,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :finishsponsordate, "何時可以完成贊助" %><br>
-    <%= f.number_field :finishsponsordate %>
+    <%= f.text_field :finishsponsordate %>
   </div>
 
 

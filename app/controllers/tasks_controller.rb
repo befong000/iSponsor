@@ -3,9 +3,12 @@ class TasksController < ApplicationController
 	  	@task = Task.new
 	end
 	def create
-		@task = Task.new(task_params)
+		@task = Task.new(params[:id])
 		@task.save
 		
+	end
+	def index
+		@tasks = Task.all
 	end
 
 end

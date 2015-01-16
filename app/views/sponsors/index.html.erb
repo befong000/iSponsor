@@ -32,8 +32,8 @@
               <div  class="blk">
                 <h2><%= sponsor.name %></h2>
                 <%= image_tag( sponsor.img_URL_outer ) %>
-                <p><%= sponsor.description %></p>
-                <%= link_to '贊助內容  >>', sponsor_path(sponsor), class: "btn btn-warning"%>
+                <%= simple_format( sponsor.description ) %>
+                <p><%= link_to '贊助內容  >>', sponsor_path(sponsor), class: "btn btn-warning"%></p>
               </div>
             </li>
          <% end%>

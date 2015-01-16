@@ -6,18 +6,19 @@
     <div id="column">
         <div class="sponsor_detail">
             <h2><%= @sponsor.name %></h2>
-            <img src="//i.imgur.com/RHFYj16.jpg">
-            <h3><%= @sponsor.description %></h3>
-            <p><br></p>
-            <h3>任務內容</h3>
-            <p><%= @sponsor.mission %></p>
+            <%= image_tag( @sponsor.img_URL_outer ) %>
+            <br>
+            <h2>任務簡介</h2>
+            <h4><%= simple_format( @sponsor.description) %></h4>
         </div>
         <div class="sponsor_apply">
+            <h2>任務內容</h2>
+            <p><%= simple_format( @sponsor.mission ) %></p>
+        <br>
             <h2>任務獎勵</h2>
             <p><%= @sponsor.reward %> </p>
+            <br>
             <%= link_to '申請贊助', new_task_path, class: 'btn btn-warning'  %>
-
-
         </div>
     </div>
     <div class="feedback">

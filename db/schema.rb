@@ -17,12 +17,7 @@ ActiveRecord::Schema.define(version: 20150116150102) do
     t.string   "name"
     t.text     "description"
     t.text     "mission"
-    t.string   "reward"
-    t.text     "img_URL_outer"
-    t.integer  "img_URL_inner"
-    t.text     "event_time"
-    t.text     "notice"
-    t.text     "Participants"
+    t.string   "prize"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

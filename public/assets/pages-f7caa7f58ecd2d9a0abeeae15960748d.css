@@ -1,0 +1,5 @@
+/* line 1, /Users/chi-hsuanhuang/projects/iSponsor/app/assets/stylesheets/pages.css.scss */
+.navbar-brand > img {
+  position: relative;
+  top: -18px;
+}

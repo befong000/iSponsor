@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150116150102) do
     t.text     "img_URL_inner"
     t.text     "event_time"
     t.text     "notice"
-    t.text     "Participants"
+    t.text     "participants"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

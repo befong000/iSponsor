@@ -31,5 +31,12 @@ class SponsorsController < ApplicationController
   def destroy
   end
 
+  def upload
+      image = params[:image]
+      File.open(image.original_filename,'wb') do |f|
+          f.write image.tempfile.read
+      end
+      redirect_to root_path
+	end
 
 end
